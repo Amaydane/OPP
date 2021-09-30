@@ -3,15 +3,17 @@
 using namespace std;
 
 template <typename Num>
-void swap(Num** a, Num n) {
+int swap(Num** a, Num n) {
     int tmp;
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
-            tmp = a[i][j];
-            a[i][j] = a[j][i];
-            a[j][i] = tmp;
+            if (a[i][j] != a[j][i]) return 0;
+            //tmp = a[i][j];
+            //a[i][j] = a[j][i];
+            //a[j][i] = tmp;
         }
     }
+    return 1;
 }
 
 int main()
@@ -26,7 +28,9 @@ int main()
         for (int j = 0; j < n; j++) cin >> a[i][j];
     }
     cout << "\n";
-    swap(a, n);
+    if (swap(a, n)) cout << "yes\n";
+    else cout << "no\n";
+    
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) cout << a[i][j] << " ";
         cout << "\n";
