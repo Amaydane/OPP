@@ -1,0 +1,14 @@
+﻿  HardProblem2.cpp
+D:\VisualStudioProjects\HardProblem2\HardProblem2\OrdinaryFraction.h(22,17): warning C4018: <: несоответствие типов со знаком и без знака
+D:\VisualStudioProjects\HardProblem2\HardProblem2\OrdinaryFraction.h(38,17): warning C4018: <: несоответствие типов со знаком и без знака
+D:\VisualStudioProjects\HardProblem2\HardProblem2\OrdinaryFraction.h(38,1): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+D:\VisualStudioProjects\HardProblem2\HardProblem2\OrdinaryFraction.h(40,17): warning C4018: <: несоответствие типов со знаком и без знака
+D:\VisualStudioProjects\HardProblem2\HardProblem2\OrdinaryFraction.h(40,1): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+D:\VisualStudioProjects\HardProblem2\HardProblem2\OrdinaryFraction.h(47,17): warning C4018: <: несоответствие типов со знаком и без знака
+D:\VisualStudioProjects\HardProblem2\HardProblem2\OrdinaryFraction.h(62,17): warning C4018: <: несоответствие типов со знаком и без знака
+D:\VisualStudioProjects\HardProblem2\HardProblem2\OrdinaryFraction.h(62,1): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+D:\VisualStudioProjects\HardProblem2\HardProblem2\OrdinaryFraction.h(63,17): warning C4018: <: несоответствие типов со знаком и без знака
+D:\VisualStudioProjects\HardProblem2\HardProblem2\OrdinaryFraction.h(63,1): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+D:\VisualStudioProjects\HardProblem2\HardProblem2\OrdinaryFraction.h(195,12): warning C4101: denom: неиспользованная локальная переменная
+D:\VisualStudioProjects\HardProblem2\HardProblem2\OrdinaryFraction.h(195,7): warning C4101: num: неиспользованная локальная переменная
+  HardProblem2.vcxproj -> D:\VisualStudioProjects\HardProblem2\Debug\HardProblem2.exe
