@@ -81,7 +81,7 @@ public:
 			else if (a > b) a %= b;
 			else b %= a;
 		}
-		return 1;
+		return max(a,b);
 	}
 
 	static int NOK(int a, int b) {
@@ -90,6 +90,11 @@ public:
 	friend const OrdinaryFraction operator*(OrdinaryFraction& fst, OrdinaryFraction& snd) {
 		int num = fst.getNum() * snd.getNum();
 		int denom = fst.getDenom() * snd.getDenom();
+		int nod = NOD(num, denom);
+		if (nod > 1) {
+			num /= nod;
+			denom /= nod;
+		}
 		string snum = "";
 		string sdenom = "";
 		while (num > 0) {
@@ -108,6 +113,11 @@ public:
 	friend const OrdinaryFraction operator/(OrdinaryFraction& fst, OrdinaryFraction& snd) {
 		int num = fst.getNum() * snd.getDenom();
 		int denom = fst.getDenom() * snd.getNum();
+		int nod = NOD(num, denom);
+		if (nod > 1) {
+			num /= nod;
+			denom /= nod;
+		}
 		string snum = "";
 		string sdenom = "";
 		while (num > 0) {
@@ -169,6 +179,11 @@ public:
 					num *= -1;
 				}
 			}
+		}
+		int nod = NOD(num, denom);
+		if (nod > 1) {
+			num /= nod;
+			denom /= nod;
 		}
 		string snum = "";
 		string sdenom = "";
